@@ -149,6 +149,9 @@
         
         <div class="border-t border-gray-800 mt-6 pt-4 text-center text-gray-400">
           <p class="text-sm" v-html="safeT('footer.copyright')"></p>
+          <p class="text-xs mt-2 opacity-75">
+            Build: {{ version.fullVersion }}
+          </p>
         </div>
       </div>
     </footer>
@@ -157,6 +160,7 @@
 
 <script setup>
 const { t } = useTranslations()
+const version = useVersion()
 const mobileMenuOpen = ref(false)
 
 // Set favicon

@@ -1,10 +1,11 @@
 {
   "name": "thida-spa",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "cross-env BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%S.000Z) GIT_COMMIT=$(git rev-parse HEAD 2>/dev/null || echo 'dev') nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "cross-env BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%S.000Z) GIT_COMMIT=$(git rev-parse HEAD 2>/dev/null || echo 'dev') nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "deploy": "./deploy.sh",
@@ -15,6 +16,7 @@
     "@nuxt/devtools": "^1.0.0",
     "@nuxtjs/tailwindcss": "^6.10.4",
     "@types/node": "^22.7.1",
+    "cross-env": "^7.0.3",
     "nuxt": "^4.0.0",
     "typescript": "^5.6.3"
   },
