@@ -1,0 +1,159 @@
+{
+  "samplePayloads": {
+    "laimLocation": {
+      "firstName": "Maria",
+      "lastName": "Schmidt",
+      "email": "maria.schmidt@example.com",
+      "phone": "+49 89 123 4567",
+      "message": "Hallo, ich interessiere mich für eine Thai Massage. Können Sie mir einen Termin für nächste Woche anbieten? Ich habe Rückenschmerzen und hoffe, dass eine Massage helfen könnte.",
+      "location": "laim",
+      "locationAddress": "Laimer Platz 1, 80686 München, Deutschland",
+      "language": "de",
+      "_email.from": "maria.schmidt@example.com",
+      "_redirect": "https://thida-royal-thaimassage.de/contact?formspark=success",
+      "_error": "https://thida-royal-thaimassage.de/contact?formspark=error",
+      "timestamp": "2024-01-15T14:30:25Z",
+      "formId": "2wnTW9eKw",
+      "submissionId": "sub_1234567890abcdef",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "ipAddress": "192.168.1.100"
+    },
+    "neuhausenLocation": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "john.smith@gmail.com",
+      "phone": "+49 89 987 6543",
+      "message": "Hello, I would like to book a wellness package for my wife and me. We are visiting Munich next month and heard great things about your Thai massage services. Could you please send me information about your packages and availability?",
+      "location": "neuhausen",
+      "locationAddress": "Rotkreuzplatz 2, 80634 München, Deutschland",
+      "language": "en",
+      "_email.from": "john.smith@gmail.com",
+      "_redirect": "https://thida-royal-thaimassage.de/contact?formspark=success",
+      "_error": "https://thida-royal-thaimassage.de/contact?formspark=error",
+      "timestamp": "2024-01-15T16:45:12Z",
+      "formId": "uyj4Ks0ZH",
+      "submissionId": "sub_0987654321fedcba",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "ipAddress": "192.168.1.101"
+    },
+    "germanCustomer": {
+      "firstName": "Anna",
+      "lastName": "Müller",
+      "email": "anna.mueller@web.de",
+      "phone": "089 555 1234",
+      "message": "Guten Tag, ich bin auf der Suche nach einer Entspannungsmassage. Haben Sie auch Hot Stone Massagen im Angebot? Ich würde gerne einen Termin für das Wochenende vereinbaren.",
+      "location": "laim",
+      "locationAddress": "Laimer Platz 1, 80686 München, Deutschland",
+      "language": "de",
+      "_email.from": "anna.mueller@web.de",
+      "_redirect": "https://thida-royal-thaimassage.de/contact?formspark=success",
+      "_error": "https://thida-royal-thaimassage.de/contact?formspark=error",
+      "timestamp": "2024-01-15T18:20:45Z",
+      "formId": "2wnTW9eKw",
+      "submissionId": "sub_abcdef1234567890",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+      "ipAddress": "192.168.1.102"
+    },
+    "englishCustomer": {
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "email": "sarah.johnson@outlook.com",
+      "phone": "+49 89 444 7777",
+      "message": "Hi there! I'm looking for a couples massage experience. Do you offer packages for two people? We're celebrating our anniversary and would love to treat ourselves to some revitalization.",
+      "location": "neuhausen",
+      "locationAddress": "Rotkreuzplatz 2, 80634 München, Deutschland",
+      "language": "en",
+      "_email.from": "sarah.johnson@outlook.com",
+      "_redirect": "https://thida-royal-thaimassage.de/contact?formspark=success",
+      "_error": "https://thida-royal-thaimassage.de/contact?formspark=error",
+      "timestamp": "2024-01-15T19:15:30Z",
+      "formId": "uyj4Ks0ZH",
+      "submissionId": "sub_fedcba0987654321",
+      "userAgent": "Mozilla/5.0 (Android 13; Mobile; rv:109.0) Gecko/109.0 Firefox/109.0",
+      "ipAddress": "192.168.1.103"
+    }
+  },
+  "webhookPayload": {
+    "description": "This is what Formspark sends to your webhook endpoint (if configured)",
+    "data": {
+      "firstName": "Max",
+      "lastName": "Mustermann",
+      "email": "max.mustermann@example.com",
+      "phone": "+49 89 123 4567",
+      "message": "Hallo, ich möchte einen Termin für eine Thai Massage vereinbaren.",
+      "location": "laim",
+      "locationAddress": "Laimer Platz 1, 80686 München, Deutschland",
+      "language": "de",
+      "_email.from": "max.mustermann@example.com",
+      "_redirect": "https://thida-royal-thaimassage.de/contact?formspark=success",
+      "_error": "https://thida-royal-thaimassage.de/contact?formspark=error"
+    },
+    "metadata": {
+      "timestamp": "2024-01-15T20:30:15Z",
+      "formId": "2wnTW9eKw",
+      "submissionId": "sub_1234567890abcdef",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "ipAddress": "192.168.1.100",
+      "referrer": "https://thida-royal-thaimassage.de/contact",
+      "country": "DE",
+      "city": "Munich",
+      "timezone": "Europe/Berlin"
+    }
+  },
+  "emailTemplateVariables": {
+    "description": "Variables available in Formspark email templates",
+    "customerData": {
+      "firstName": "Customer's first name",
+      "lastName": "Customer's last name",
+      "email": "Customer's email address",
+      "phone": "Customer's phone number",
+      "message": "Customer's message content",
+      "location": "Selected location (laim or neuhausen)",
+      "locationAddress": "Full address of selected location",
+      "language": "Selected language (de or en)"
+    },
+    "systemData": {
+      "timestamp": "Submission timestamp (ISO format)",
+      "formId": "Formspark form ID",
+      "submissionId": "Unique submission ID",
+      "userAgent": "Browser information",
+      "ipAddress": "Customer's IP address"
+    },
+    "conditionalLogic": {
+      "locationDisplay": "{% if data.location == 'laim' %}München Laim{% elif data.location == 'neuhausen' %}München Neuhausen{% else %}{{data.location}}{% endif %}",
+      "languageDisplay": "{% if data.language == 'de' %}Deutsch{% elif data.language == 'en' %}English{% else %}{{data.language}}{% endif %}"
+    }
+  },
+  "testingInstructions": {
+    "description": "How to test your email template with this data",
+    "steps": [
+      "1. Copy one of the sample payloads above",
+      "2. Go to Formspark dashboard → Your Form → Email Templates",
+      "3. Use the 'Preview' or 'Test' feature",
+      "4. Paste the JSON data to see how your template renders",
+      "5. Check both HTML and plain text versions",
+      "6. Test on different email clients (Gmail, Outlook, Apple Mail)"
+    ],
+    "testScenarios": [
+      "German customer at Laim location",
+      "English customer at Neuhausen location",
+      "Mobile user submission",
+      "Long message content",
+      "Special characters in name/email"
+    ]
+  },
+  "formsparkEndpoints": {
+    "laim": "https://submit-form.com/2wnTW9eKw",
+    "neuhausen": "https://submit-form.com/uyj4Ks0ZH",
+    "note": "These are the endpoints configured in your contact form"
+  },
+  "emailConfiguration": {
+    "toEmail": "your-business@email.com",
+    "fromEmail": "{{data.email}}",
+    "replyTo": "{{data.email}}",
+    "subject": "Kontaktformular für {{data.location}} - {{data.firstName}} {{data.lastName}}",
+    "templateType": "HTML + Plain Text",
+    "autoReply": true,
+    "spamProtection": true
+  }
+}
