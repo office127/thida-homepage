@@ -42,7 +42,7 @@
             </svg>
           </div>
           <div class="flex-1">
-            <div class="text-xs font-medium opacity-90 whitespace-nowrap">Get Directions</div>
+            <div class="text-xs font-medium opacity-90 whitespace-nowrap">{{ t('contactPage.getDirections') }}</div>
             <div class="text-sm font-bold whitespace-nowrap overflow-hidden text-ellipsis" v-html="t(`locations.${locationKey}.address`)"></div>
           </div>
         </a>
@@ -58,7 +58,7 @@
             </svg>
           </div>
           <div class="flex-1">
-            <div class="text-xs font-medium opacity-90 whitespace-nowrap">Call Now</div>
+            <div class="text-xs font-medium opacity-90 whitespace-nowrap">{{ t('contactPage.callNow') }}</div>
             <div class="text-sm font-bold whitespace-nowrap">{{ t(`locations.${locationKey}.phone`) }}</div>
           </div>
         </a>
@@ -74,7 +74,7 @@
             </svg>
           </div>
           <div class="flex-1">
-            <div class="text-xs font-medium opacity-90 whitespace-nowrap">Send Email</div>
+            <div class="text-xs font-medium opacity-90 whitespace-nowrap">{{ t('contactPage.sendEmail') }}</div>
             <div class="text-sm font-bold whitespace-nowrap overflow-hidden text-ellipsis">{{ t(`locations.${locationKey}.email`) }}</div>
           </div>
         </a>
@@ -87,7 +87,7 @@
             </svg>
           </div>
           <div class="flex-1">
-            <div class="text-xs font-medium text-gray-500 whitespace-nowrap">Hours</div>
+            <div class="text-xs font-medium text-gray-500 whitespace-nowrap">{{ t('contactPage.hours') }}</div>
             <div class="text-sm font-bold text-gray-900 whitespace-nowrap">{{ t(`locations.${locationKey}.hours`) }}</div>
           </div>
         </div>
